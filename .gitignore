@@ -1,0 +1,76 @@
+# ==========================================
+# FitFlow Redesign Monorepo .gitignore
+# ==========================================
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDEs and Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# ==========================================
+# Frontend: Flutter & Dart
+# ==========================================
+frontend/fitflow_app/.dart_tool/
+frontend/fitflow_app/.flutter-plugins
+frontend/fitflow_app/.flutter-plugins-dependencies
+frontend/fitflow_app/.packages
+frontend/fitflow_app/build/
+frontend/fitflow_app/.pub-cache/
+frontend/fitflow_app/.pub/
+frontend/fitflow_app/ios/Pods/
+frontend/fitflow_app/ios/.symlinks/
+frontend/fitflow_app/ios/Flutter/Flutter.framework
+frontend/fitflow_app/ios/Flutter/Flutter.podspec
+frontend/fitflow_app/ios/Flutter/Generated.xcconfig
+frontend/fitflow_app/ios/Flutter/app.framework
+frontend/fitflow_app/android/.gradle/
+frontend/fitflow_app/android/captures/
+frontend/fitflow_app/android/gradlew
+frontend/fitflow_app/android/gradlew.bat
+frontend/fitflow_app/android/local.properties
+frontend/fitflow_app/android/**/GeneratedPluginRegistrant.java
+
+# ==========================================
+# Backend: NestJS / Node.js
+# ==========================================
+backend/core-api/node_modules/
+backend/core-api/dist/
+backend/core-api/npm-debug.log*
+backend/core-api/yarn-debug.log*
+backend/core-api/yarn-error.log*
+backend/core-api/coverage/
+backend/core-api/.nyc_output/
+
+# ==========================================
+# AI Service: Python / FastAPI
+# ==========================================
+ai-service/**/__pycache__/
+ai-service/**/*.py[cod]
+ai-service/**/$py.class
+ai-service/**/.pytest_cache/
+ai-service/**/.mypy_cache/
+ai-service/**/.coverage
+ai-service/**/htmlcov/
+ai-service/**/.venv/
+ai-service/**/venv/
+ai-service/**/ENV/
+ai-service/**/env/
